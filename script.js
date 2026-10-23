@@ -60,7 +60,7 @@ document.getElementById('btn-wa').addEventListener('click', () => {
         return;
     }
 
-    const text = `Halo, nama saya *${name}*.\n\n${message}`;
+    const text = `Hello, my name *${name}*.\n\n${message}`;
     const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(waUrl, '_blank');
 });
@@ -71,7 +71,7 @@ document.getElementById('btn-email').addEventListener('click', () => {
     const myEmail = 'mhmmdikhsn257@gmail.com';
 
     if (!name || !message) {
-        alert('Harap isi Nama dan Pesan Anda terlebih dahulu.');
+        alert('Please fill in your Name and Message first.');
         return;
     }
 
